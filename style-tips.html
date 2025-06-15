@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✨ Style Tips - Girly Girls Paradise ✨</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">Girly Girls Paradise</div>
+        <button class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="about.html">About</a>
+            <a href="style-tips.html" class="active">Style Tips</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+    <div class="menu-overlay" onclick="toggleMenu()"></div>
+
+    <header class="hero">
+        <h1>Style Tips & Tricks</h1>
+        <p class="subtitle">Look Fabulous Every Day! 💖</p>
+    </header>
+
+    <main>
+        <section class="style-tips">
+            <div class="tip-card">
+                <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=500&auto=format&fit=crop&q=60" alt="Spring Fashion" class="tip-image">
+                <div class="tip-content">
+                    <h3>Spring Fashion Guide</h3>
+                    <p>Discover the perfect pastel combinations for spring! Mix soft pinks with mint greens for a fresh look.</p>
+                    <button class="tip-button" onclick="showTipDetails('spring')">Read More</button>
+                </div>
+            </div>
+
+            <div class="tip-card">
+                <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=500&auto=format&fit=crop&q=60" alt="Accessories" class="tip-image">
+                <div class="tip-content">
+                    <h3>Accessorize Like a Pro</h3>
+                    <p>Learn how to layer necklaces and mix metals for a trendy, personalized look.</p>
+                    <button class="tip-button" onclick="showTipDetails('accessories')">Read More</button>
+                </div>
+            </div>
+
+            <div class="tip-card">
+                <img src="https://images.unsplash.com/photo-1596704017254-9b5e2b6a2b0a?w=500&auto=format&fit=crop&q=60" alt="Makeup Tips" class="tip-image">
+                <div class="tip-content">
+                    <h3>Girly Makeup Tips</h3>
+                    <p>Master the art of soft, romantic makeup with our step-by-step guide.</p>
+                    <button class="tip-button" onclick="showTipDetails('makeup')">Read More</button>
+                </div>
+            </div>
+
+            <div class="tip-card">
+                <img src="https://images.unsplash.com/photo-1551232864-3f0890e580d9?w=500&auto=format&fit=crop&q=60" alt="Hair Styles" class="tip-image">
+                <div class="tip-content">
+                    <h3>Hair Style Ideas</h3>
+                    <p>Try these cute and easy hairstyles for any occasion!</p>
+                    <button class="tip-button" onclick="showTipDetails('hair')">Read More</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="style-quiz">
+            <h2>🎀 Find Your Style Quiz 🎀</h2>
+            <div class="quiz-container">
+                <div id="quizQuestion">
+                    <h3>What's your perfect style?</h3>
+                    <p>Take our fun quiz to discover your unique girly style!</p>
+                    <button onclick="startQuiz()">Start Quiz! ✨</button>
+                </div>
+                <div id="quizResults" style="display: none;">
+                    <!-- Quiz results will be shown here -->
+                </div>
+            </div>
+        </section>
+
+        <section class="style-tips-newsletter">
+            <h2>💖 Get Weekly Style Tips! 💖</h2>
+            <p>Subscribe to receive exclusive style tips and fashion inspiration every week!</p>
+            <form id="styleTipsForm" onsubmit="subscribeStyleTips(event)">
+                <input type="email" id="styleTipsEmail" placeholder="Enter your email" required>
+                <select id="stylePreferences" required>
+                    <option value="">Select Your Style Interests</option>
+                    <option value="fashion">Fashion</option>
+                    <option value="beauty">Beauty</option>
+                    <option value="accessories">Accessories</option>
+                    <option value="all">All of the Above!</option>
+                </select>
+                <button type="submit">Subscribe Now! ✨</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made with 💖 by a Girly Girl</p>
+        <div class="social-links">
+            <span class="social-icon">💖</span>
+            <span class="social-icon">✨</span>
+            <span class="social-icon">🎀</span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

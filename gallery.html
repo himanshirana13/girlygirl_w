@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✨ Girly Gallery ✨</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">Girly Girls Paradise</div>
+        <button class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="gallery.html" class="active">Gallery</a>
+            <a href="about.html">About</a>
+            <a href="style-tips.html">Style Tips</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+    <div class="menu-overlay" onclick="toggleMenu()"></div>
+
+    <header class="gallery-header">
+        <h1>✨ Our Girly Gallery ✨</h1>
+        <p class="subtitle">A collection of all things pink and pretty! 💖</p>
+    </header>
+
+    <main class="gallery-container">
+        <div class="gallery-controls">
+            <button onclick="filterGallery('all')" class="active">All</button>
+            <button onclick="filterGallery('fashion')">Fashion</button>
+            <button onclick="filterGallery('accessories')">Accessories</button>
+            <button onclick="filterGallery('makeup')">Makeup</button>
+        </div>
+
+        <div class="gallery-grid">
+            <div class="gallery-item fashion">
+                <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=500&auto=format&fit=crop&q=60" alt="Pink Fashion Dress">
+                <div class="item-overlay">
+                    <h3>Pink Summer Dress</h3>
+                    <p>Elegant and feminine summer style! 🌸</p>
+                    <button onclick="likeItem(this)">💖 Like</button>
+                </div>
+            </div>
+
+            <div class="gallery-item accessories">
+                <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=500&auto=format&fit=crop&q=60" alt="Fashion Accessories">
+                <div class="item-overlay">
+                    <h3>Girly Accessories</h3>
+                    <p>Perfect accessories for any outfit! ✨</p>
+                    <button onclick="likeItem(this)">💖 Like</button>
+                </div>
+            </div>
+
+            <div class="gallery-item makeup">
+                <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=500&auto=format&fit=crop&q=60" alt="Makeup Collection">
+                <div class="item-overlay">
+                    <h3>Girly Makeup Collection</h3>
+                    <p>Create your perfect look! 💄</p>
+                    <button onclick="likeItem(this)">💖 Like</button>
+                </div>
+            </div>
+
+            <div class="gallery-item fashion">
+                <img src="https://images.unsplash.com/photo-1485968579580-b6d095142e6e?w=500&auto=format&fit=crop&q=60" alt="Fashion Outfit">
+                <div class="item-overlay">
+                    <h3>Spring Fashion</h3>
+                    <p>Fresh and vibrant spring style! 🌺</p>
+                    <button onclick="likeItem(this)">💖 Like</button>
+                </div>
+            </div>
+
+            <div class="gallery-item accessories">
+                <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=500&auto=format&fit=crop&q=60" alt="Fashion Jewelry">
+                <div class="item-overlay">
+                    <h3>Elegant Jewelry</h3>
+                    <p>Add sparkle to your style! 💎</p>
+                    <button onclick="likeItem(this)">💖 Like</button>
+                </div>
+            </div>
+
+            <div class="gallery-item makeup">
+                <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=500&auto=format&fit=crop&q=60" alt="Beauty Products">
+                <div class="item-overlay">
+                    <h3>Beauty Essentials</h3>
+                    <p>Your daily beauty routine! 💅</p>
+                    <button onclick="likeItem(this)">💖 Like</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-stats">
+            <h3>Gallery Stats</h3>
+            <div id="likeCounter">Total Likes: 0</div>
+            <div id="viewCounter">Total Views: 0</div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Made with 💖 by a Girly Girl</p>
+        <div class="social-links">
+            <span class="social-icon">💖</span>
+            <span class="social-icon">✨</span>
+            <span class="social-icon">🎀</span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✨ About Us - Girly Girls Paradise ✨</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">Girly Girls Paradise</div>
+        <button class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="about.html" class="active">About</a>
+            <a href="style-tips.html">Style Tips</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+    <div class="menu-overlay" onclick="toggleMenu()"></div>
+
+    <header class="hero">
+        <h1>About Our Girly Community</h1>
+        <p class="subtitle">Where Pink Dreams Come True! 💖</p>
+    </header>
+
+    <main>
+        <section class="about-content">
+            <div class="about-card">
+                <h2>✨ Our Story ✨</h2>
+                <p>Welcome to Girly Girls Paradise, where we celebrate all things pink, pretty, and fabulous! Our community was created with love to bring together people who share a passion for girly aesthetics and positive vibes.</p>
+                <div class="stats-container">
+                    <div class="stat-item">
+                        <span class="stat-number">1000+</span>
+                        <span class="stat-label">Members</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Style Tips</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">Support</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-card">
+                <h2>🎀 Our Mission 🎀</h2>
+                <p>We believe in spreading joy, confidence, and style through our girly community. Our mission is to create a safe space where everyone can express their unique style and connect with like-minded individuals.</p>
+                <button onclick="showMissionAnimation()" class="mission-btn">See Our Mission in Action!</button>
+            </div>
+
+            <div class="about-card">
+                <h2>💖 Join Our Community 💖</h2>
+                <p>Be part of our growing family! Share your style, get inspired, and make new friends who love all things girly.</p>
+                <form id="joinCommunityForm" onsubmit="handleCommunityJoin(event)">
+                    <input type="text" id="communityName" placeholder="Your Name" required>
+                    <input type="email" id="communityEmail" placeholder="Your Email" required>
+                    <select id="interests" required>
+                        <option value="">Select Your Interests</option>
+                        <option value="fashion">Fashion</option>
+                        <option value="makeup">Makeup</option>
+                        <option value="accessories">Accessories</option>
+                        <option value="all">All of the Above!</option>
+                    </select>
+                    <button type="submit">Join Now! 💖</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="team-section">
+            <h2>✨ Meet Our Team ✨</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=500&auto=format&fit=crop&q=60" alt="Princess Pink" class="team-photo">
+                    <h3>Princess Pink</h3>
+                    <p>Founder & Style Expert</p>
+                    <div class="team-social">
+                        <span class="social-icon">💖</span>
+                        <span class="social-icon">✨</span>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=500&auto=format&fit=crop&q=60" alt="Glitter Girl" class="team-photo">
+                    <h3>Glitter Girl</h3>
+                    <p>Makeup Artist</p>
+                    <div class="team-social">
+                        <span class="social-icon">💄</span>
+                        <span class="social-icon">✨</span>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=500&auto=format&fit=crop&q=60" alt="Fashion Fairy" class="team-photo">
+                    <h3>Fashion Fairy</h3>
+                    <p>Fashion Consultant</p>
+                    <div class="team-social">
+                        <span class="social-icon">👗</span>
+                        <span class="social-icon">✨</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made with 💖 by a Girly Girl</p>
+        <div class="social-links">
+            <span class="social-icon">💖</span>
+            <span class="social-icon">✨</span>
+            <span class="social-icon">🎀</span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

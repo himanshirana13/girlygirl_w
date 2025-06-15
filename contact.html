@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✨ Contact Us - Girly Girls Paradise ✨</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">Girly Girls Paradise</div>
+        <button class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="about.html">About</a>
+            <a href="style-tips.html">Style Tips</a>
+            <a href="contact.html" class="active">Contact</a>
+        </div>
+    </nav>
+    <div class="menu-overlay" onclick="toggleMenu()"></div>
+
+    <header class="hero">
+        <h1>Get in Touch!</h1>
+        <p class="subtitle">We'd Love to Hear from You! 💖</p>
+    </header>
+
+    <main>
+        <section class="contact-container">
+            <div class="contact-info">
+                <h2>✨ Contact Information ✨</h2>
+                <div class="info-card">
+                    <div class="info-item">
+                        <span class="info-icon">💌</span>
+                        <h3>Email Us</h3>
+                        <p>hello@girlygirlsparadise.com</p>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">💖</span>
+                        <h3>Social Media</h3>
+                        <p>@girlygirlsparadise</p>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">⏰</span>
+                        <h3>Response Time</h3>
+                        <p>Within 24 hours</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-container">
+                <h2>💝 Send Us a Message 💝</h2>
+                <form id="contactForm" onsubmit="handleContactSubmit(event)" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" required placeholder="Enter your name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" required placeholder="Enter your email">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" required>
+                            <option value="">Select a subject</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="style">Style Advice</option>
+                            <option value="collaboration">Collaboration</option>
+                            <option value="feedback">Feedback</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" required placeholder="Write your message here..."></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="checkbox-container">
+                            <input type="checkbox" id="newsletter" checked>
+                            <span class="checkmark"></span>
+                            Subscribe to our newsletter
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Send Message 💖</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <h2>✨ Frequently Asked Questions ✨</h2>
+            <div class="faq-container">
+                <div class="faq-item" onclick="toggleFAQ(this)">
+                    <h3>How can I join the community? 💖</h3>
+                    <p class="faq-answer">You can join our community by filling out the contact form above or visiting our About page to sign up!</p>
+                </div>
+                <div class="faq-item" onclick="toggleFAQ(this)">
+                    <h3>Do you offer style consultations? 👗</h3>
+                    <p class="faq-answer">Yes! We offer personalized style consultations. Just mention it in your message and we'll get back to you with details.</p>
+                </div>
+                <div class="faq-item" onclick="toggleFAQ(this)">
+                    <h3>How can I submit my style photos? 📸</h3>
+                    <p class="faq-answer">You can submit your photos through our Style Tips page or by sending them directly through the contact form!</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="map-section">
+            <h2>🎀 Visit Our Studio 🎀</h2>
+            <div class="map-container">
+                <!-- Placeholder for map -->
+                <div class="map-placeholder">
+                    <p>✨ Our Studio Location ✨</p>
+                    <p>123 Pink Street, Fashion District</p>
+                    <p>Girly City, GC 12345</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made with 💖 by a Girly Girl</p>
+        <div class="social-links">
+            <span class="social-icon">💖</span>
+            <span class="social-icon">✨</span>
+            <span class="social-icon">🎀</span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
